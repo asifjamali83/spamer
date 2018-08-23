@@ -2906,7 +2906,7 @@ def RIDEN_FAST_USER(fast):
                                 cl.sendImageWithURL(kirim, path)
 #------------ TEMPLATE ------------#
                         elif rfuText.lower().startswith("help"):
-                            Help = Help
+                            #Help = Help
                             _session = requests.session()
                             image = "https://lh3.googleusercontent.com/proxy/-qcXIaVI5RPLI_rZgSi8T-QyHCDuVXRoFQUksJ2tzKKOGt8vGLQ6EW7yZBO9SIpQ0b5GlZgahj8S4lENJRr2PDK7jN-vPImkR628uGfvOlr3HpSjBCWrGfCGiOsj9pT7PjH8OuZ6bZ7_9RB7tTeUcmld8U5z=w256-h256-nc"
                             url = "https://game.linefriends.com/jbp-lcs-ranking/lcs/sendMessage"
