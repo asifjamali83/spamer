@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 from gtts import gTTS
 from googletrans import Translator
 from multiprocessing import Pool, Process
-from ffmpy import FFmpeg
+#from ffmpy import FFmpeg
 import time, random, asyncio, timeit, sys, json, codecs, threading, glob, re, string, os, requests, subprocess, six, urllib, urllib.parse, ast, pytz, wikipedia, pafy, youtube_dl, atexit
 
 print ("\n\n ---  WELCOME TO RFU SEKAWAN  ---\n")
