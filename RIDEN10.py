@@ -10,44 +10,44 @@ import time, random, asyncio, timeit, sys, json, codecs, threading, glob, re, st
 
 print ("\n\n ---  WELCOME TO RFU SEKAWAN  ---\n")
 
-cl = RIDEN()
-#cl = RIDEN(authTokenRFU="YOUR TOKEN")
+#cl = RIDEN()
+cl = RIDEN(authTokenRFU="EwjA7BGA87lPrc4L0zU9.grzYgOnTdKvSkrQ7FTsKMq.TmsMcUZV6F1pLmV4TxQ5RDSN8NwxUg/x9iFFmCoYF6s=")
 cl.log("YOUR TOKEN : {}".format(str(cl.authToken)))
 channel = RIDENChannel(cl,cl.server.CHANNEL_ID['LINE_TIMELINE'])
 cl.log("CHANNEL TOKEN : " + str(channel.getChannelResult()))
 
-riden1 = RIDEN()
-#riden1 = RIDEN(authTokenRFU="YOUR TOKEN")
+#riden1 = RIDEN()
+riden1 = RIDEN(authTokenRFU="EwQwiT6DfOxNgVq4N5k4.6H/R+wrQy2yUyPPXaxh/na.6NRoxk5l1rhrVXJm/ELejdhCF8SP5CChXEVa60xwpic=")
 riden1.log("YOUR TOKEN : {}".format(str(riden1.authToken)))
 channel = RIDENChannel(riden1,riden1.server.CHANNEL_ID['LINE_TIMELINE'])
 riden1.log("CHANNEL TOKEN : " + str(channel.getChannelResult()))
 
-riden2 = RIDEN()
-#riden2 = RIDEN(authTokenRFU="YOUR TOKEN")
+#riden2 = RIDEN()
+riden2 = RIDEN(authTokenRFU="Ew30YvWx8HLYgoafox1f.+llTyZYKm78j6la5VJ62dW.ni81UyZYBJHk7n3rFiy26jGrjPdf0drBE8oN1ywKM3k=")
 riden2.log("YOUR TOKEN : {}".format(str(riden2.authToken)))
 channel = RIDENChannel(riden2,riden2.server.CHANNEL_ID['LINE_TIMELINE'])
 riden2.log("CHANNEL TOKEN : " + str(channel.getChannelResult()))
 
-riden3 = RIDEN()
-#riden3 = RIDEN(authTokenRFU="YOUR TOKEN")
+#riden3 = RIDEN()
+riden3 = RIDEN(authTokenRFU="EwbQ1uHV1VscXP22l6g3.OUlRzsF0pgECqaJ28bzZyW.DEpPFwOb8b8YwbBKjjdzcwop1K6H1uR5iCf+pOqgTdw=")
 riden3.log("YOUR TOKEN : {}".format(str(riden3.authToken)))
 channel = RIDENChannel(riden3,riden3.server.CHANNEL_ID['LINE_TIMELINE'])
 riden3.log("CHANNEL TOKEN : " + str(channel.getChannelResult()))
 
-riden4 = RIDEN()
-#riden4 = RIDEN(authTokenRFU="YOUR TOKEN")
+#riden4 = RIDEN()
+riden4 = RIDEN(authTokenRFU="EwJkBZO4yMIWg0LLIpn4.isZS+Kbg898rFh+kmWKb1a.xpUABCfeHYY/6URqJnByQ+V3y42Sm8lj5deKtQKU9M8=")
 riden4.log("YOUR TOKEN : {}".format(str(riden4.authToken)))
 channel = RIDENChannel(riden4,riden4.server.CHANNEL_ID['LINE_TIMELINE'])
 riden4.log("CHANNEL TOKEN : " + str(channel.getChannelResult()))
 
-riden5 = RIDEN()
-#riden5 = RIDEN(authTokenRFU="YOUR TOKEN")
+#riden5 = RIDEN()
+riden5 = RIDEN(authTokenRFU="EwMOswNrySknlz9DLjP3.zp81iCnJRS6DWRFwE7rbCW.pjYodEkBT4a54+NUparCYdfQvGrY0Pgi/9JYhFwtU4E=")
 riden5.log("YOUR TOKEN : {}".format(str(riden5.authToken)))
 channel = RIDENChannel(riden5,riden5.server.CHANNEL_ID['LINE_TIMELINE'])
 riden5.log("CHANNEL TOKEN : " + str(channel.getChannelResult()))
 
-riden6 = RIDEN()
-#riden6 = RIDEN(authTokenRFU="YOUR TOKEN")
+#riden6 = RIDEN()
+riden6 = RIDEN(authTokenRFU="EwLmlQvl5L2onz67a9be.xmuvUN9DywEZbNRmpsxChG.AQNksnA/k4V9IoaqgsLYj6Kb8bRi65hVAMXtAKuY82U=")
 riden6.log("YOUR TOKEN : {}".format(str(riden6.authToken)))
 channel = RIDENChannel(riden6,riden6.server.CHANNEL_ID['LINE_TIMELINE'])
 riden6.log("CHANNEL TOKEN : " + str(channel.getChannelResult()))
@@ -186,7 +186,7 @@ Mozilla = {
 
 setTime = {}
 setTime = Squad['readTime']
-mulai = time.time() 
+mulai = time.time()
 msg_dict = {}
 
 ProfileMe = {
@@ -508,7 +508,7 @@ def RIDEN_FAST_USER(fast):
         elif fast.type == 55:
             try:
                 if RfuCctv['Point1'][fast.param1]==True:
-                    if fast.param1 in RfuCctv['Point2']:  
+                    if fast.param1 in RfuCctv['Point2']:
                         Name = cl.getContact(fast.param2).displayName
                         if Name in RfuCctv['Point3'][fast.param1]:
                             pass
@@ -540,7 +540,7 @@ def RIDEN_FAST_USER(fast):
                 else:
                    pass
             except:
-                pass   
+                pass
 
         if fast.type == 17:
             if Squad["Welcome"] == True:
@@ -605,7 +605,7 @@ def RIDEN_FAST_USER(fast):
                                 except:
                                     pass
                 return
-            
+
             if JSMID1 in fast.param3:
               if fast.param2 in RfuBot:
                 if fast.param2 not in RfuSekawan and fast.param2 not in Owner and fast.param2 not in Squad["Admin"]:
@@ -1010,7 +1010,7 @@ def RIDEN_FAST_USER(fast):
             text = msg.text
             rfuText = msg.text
             msg_id = msg.id
-            kirim = msg.to           
+            kirim = msg.to
             user = msg._from
             if msg.toType == 0 or msg.toType == 2:
                 if msg.toType == 0:
@@ -1156,20 +1156,20 @@ def RIDEN_FAST_USER(fast):
                     path10 = riden10.downloadObjectMsg(msg.id)
                     riden1.updateProfilePicture(path1)
                     riden2.updateProfilePicture(path2)
-                    riden3.updateProfilePicture(path3)                    
+                    riden3.updateProfilePicture(path3)
                     riden4.updateProfilePicture(path4)
                     riden5.updateProfilePicture(path5)
-                    riden6.updateProfilePicture(path6)                    
+                    riden6.updateProfilePicture(path6)
                     riden7.updateProfilePicture(path7)
-                    riden8.updateProfilePicture(path8)                    
+                    riden8.updateProfilePicture(path8)
                     riden9.updateProfilePicture(path9)
                     riden10.updateProfilePicture(path10)
                     riden1.mentionWithRFU(kirim,user,"┗ Ava Updated ┛","")
                     #riden2.mentionWithRFU(kirim,user,"┗ Update Picture Success ┛","")
-                    #riden3.mentionWithRFU(kirim,user,"┗ Update Picture Success ┛","")                    
+                    #riden3.mentionWithRFU(kirim,user,"┗ Update Picture Success ┛","")
                     #riden4.mentionWithRFU(kirim,user,"┗ Update Picture Success ┛","")
                     #riden5.mentionWithRFU(kirim,user,"┗ Update Picture Success ┛","")
-                    #riden6.mentionWithRFU(kirim,user,"┗ Update Picture Success ┛","")                    
+                    #riden6.mentionWithRFU(kirim,user,"┗ Update Picture Success ┛","")
                     #riden7.mentionWithRFU(kirim,user,"┗ Update Picture Success ┛","")
                     #riden8.mentionWithRFU(kirim,user,"┗ Update Picture Success ┛","")
                     #riden9.mentionWithRFU(kirim,user,"┗ Update Picture Success ┛","")
@@ -1286,7 +1286,7 @@ def RIDEN_FAST_USER(fast):
                                 cl.sendText(kirim,"Invite " + _name + "\n  ┗ Inviting ┛\nSuccessfully!")
                                 Squad['Invite'] = False
                                 break
-                            except:             
+                            except:
                                  cl.sendText(kirim, ' ┗ Contact error ┛')
                                  Squad['Invite'] = False
                                  break
@@ -1306,7 +1306,7 @@ def RIDEN_FAST_USER(fast):
                     for s in groups.members:
                         if _name in s.displayName:
                             print ("[Target] Stealed")
-                            break             
+                            break
                         else:
                             targets.append(copy)
                     if targets == []:
@@ -1321,8 +1321,8 @@ def RIDEN_FAST_USER(fast):
                                 cover = cl.getProfileCoverURL(target)
                                 cl.sendImageWithURL(kirim, cover)
                                 Squad['Steal'] = False
-                                break                     
-                            except:             
+                                break
+                            except:
                                  cl.sendText(kirim, 'Contact error')
                                  Squad['Steal'] = False
                                  break
@@ -1342,7 +1342,7 @@ def RIDEN_FAST_USER(fast):
                     for s in groups.members:
                         if _name in s.displayName:
                             print ("[Target] Kick Via Contact")
-                            break             
+                            break
                         else:
                             targets.append(copy)
                     if targets == []:
@@ -1354,7 +1354,7 @@ def RIDEN_FAST_USER(fast):
                                     cl.kickoutFromGroup(kirim,[target])
                                     Squad['KillOn'] = False
                                     break
-                                except:             
+                                except:
                                      cl.sendText(kirim, 'Target Not Found')
                                      Squad['KillOn'] = False
                                      break
@@ -1374,7 +1374,7 @@ def RIDEN_FAST_USER(fast):
                     for s in groups.members:
                         if _name in s.displayName:
                             print ("[Target] Send Gift")
-                            break             
+                            break
                         else:
                             targets.append(copy)
                     if targets == []:
@@ -1388,7 +1388,7 @@ def RIDEN_FAST_USER(fast):
                                 riden3.sendMessage(target, None, contentMetadata={'PRDID': 'a0768339-c2d3-4189-9653-2909e9bb6f58','PRDTYPE': 'THEME','MSGTPL': '12'}, contentType = 9)
                                 Squad['Gift'] = False
                                 break
-                            except:             
+                            except:
                                  cl.sendText(kirim, 'Target Error')
                                  Squad['Gift'] = False
                                  break
@@ -1408,7 +1408,7 @@ def RIDEN_FAST_USER(fast):
                     for s in groups.members:
                         if _name in s.displayName:
                             print ("[Target] Mimic Add")
-                            break             
+                            break
                         else:
                             targets.append(copy)
                     if targets == []:
@@ -1420,7 +1420,7 @@ def RIDEN_FAST_USER(fast):
                                 cl.sendText(kirim," ≡Target Added≡ ")
                                 Squas['Mic'] = False
                                 break
-                            except:             
+                            except:
                                  cl.sendText(kirim, '≡Please Restart≡')
                                  break
 
@@ -1439,7 +1439,7 @@ def RIDEN_FAST_USER(fast):
                     for s in groups.members:
                         if _name in s.displayName:
                             print ("[Target] Mimic Add")
-                            break             
+                            break
                         else:
                             targets.append(copy)
                     if targets == []:
@@ -1451,7 +1451,7 @@ def RIDEN_FAST_USER(fast):
                                 cl.sendText(kirim,"≡Target Deleted≡")
                                 Squad['MicDel'] = False
                                 break
-                            except:             
+                            except:
                                  cl.sendText(kirim, '≡Please Restart≡')
                                  break
 
@@ -1470,7 +1470,7 @@ def RIDEN_FAST_USER(fast):
                     for s in groups.members:
                         if _name in s.displayName:
                             print ("[Target] Stealed")
-                            break             
+                            break
                         else:
                             targets.append(copy)
                     if targets == []:
@@ -1482,12 +1482,12 @@ def RIDEN_FAST_USER(fast):
                                 cl.sendText(kirim, " 『Copy Contact Success』")
                                 Squad['Copy'] = False
                                 break
-                            except:             
+                            except:
                                  cl.sendText(kirim, "『Contact Error』")
                                  Squad['Copy'] = False
                                  break
-                                 
-                                 
+
+
 #======= AUTO TAG & CHAT BATAS SCRIP ========
         if fast.type == 26:
             msg = fast.message
@@ -1568,7 +1568,7 @@ def RIDEN_FAST_USER(fast):
                                 riden3.createGroup("PUY",[target])
                                 cl.sendText(kirim,"   『 Spam Invite to " + korban + " 』\nSuccessfully!")
                                 Squad['SpamInvite'] = False
-                            except:             
+                            except:
                                  cl.sendText(kirim, '   『 Spam Invite 』\nContact error')
                                  Squad['SpamInvite'] = False
                                  break
@@ -1581,7 +1581,7 @@ def RIDEN_FAST_USER(fast):
             text = msg.text
             rfuText = msg.text
             msg_id = msg.id
-            kirim = msg.to           
+            kirim = msg.to
             user = msg._from
             if msg.toType == 0 or msg.toType == 2:
                 if msg.toType == 0:
@@ -1594,7 +1594,7 @@ def RIDEN_FAST_USER(fast):
 
                     elif rfuText is None:
                         return
-                    else:               
+                    else:
                         if rfuText.lower() == 'PROSES TRANSISI':
                             cl.sendMessage(0, user)
 
@@ -1619,10 +1619,10 @@ def RIDEN_FAST_USER(fast):
                                 team = cl.getContact(mid).displayName
                                 team1 = riden1.getContact(JSMID1).displayName
                                 team2 = riden2.getContact(JSMID2).displayName
-                                team3 = riden3.getContact(JSMID3).displayName                                
+                                team3 = riden3.getContact(JSMID3).displayName
                                 team4 = riden4.getContact(JSMID4).displayName
                                 team5 = riden5.getContact(JSMID5).displayName
-                                team6 = riden6.getContact(JSMID6).displayName                                
+                                team6 = riden6.getContact(JSMID6).displayName
                                 #team7 = riden7.getContact(JSMID7).displayName
                                 #team8 = riden8.getContact(JSMID8).displayName
                                 #team9 = riden9.getContact(JSMID9).displayName
@@ -1631,10 +1631,10 @@ def RIDEN_FAST_USER(fast):
                                 cl.mentionWithRFU(kirim,owner," Hi ","" + str(" ("+team+")"))
                                 riden1.mentionWithRFU(kirim,owner," Hi ","" + str(" ("+team1+")"))
                                 riden2.mentionWithRFU(kirim,owner," Hi ","" + str(" ("+team2+")"))
-                                riden3.mentionWithRFU(kirim,owner," Hi ","" + str(" ("+team3+")"))                                
+                                riden3.mentionWithRFU(kirim,owner," Hi ","" + str(" ("+team3+")"))
                                 riden4.mentionWithRFU(kirim,owner," Hi ","" + str(" ("+team4+")"))
                                 riden5.mentionWithRFU(kirim,owner," Hi ","" + str(" ("+team5+")"))
-                                riden6.mentionWithRFU(kirim,owner," Hi ","" + str(" ("+team6+")"))                                
+                                riden6.mentionWithRFU(kirim,owner," Hi ","" + str(" ("+team6+")"))
                                 #riden7.mentionWithRFU(kirim,owner," Hi ","" + str(" ("+team7+")"))
                                 #riden8.mentionWithRFU(kirim,owner," Hi ","" + str(" ("+team8+")"))
                                 #riden9.mentionWithRFU(kirim,owner," Hi ","" + str(" ("+team9+")"))
@@ -1645,7 +1645,7 @@ def RIDEN_FAST_USER(fast):
                                cl.sendMessage(kirim, None, contentMetadata={'mid': mid}, contentType=13)
                                cl.sendMessage(kirim, None, contentMetadata={'mid': JSMID1}, contentType=13)
                                cl.sendMessage(kirim, None, contentMetadata={'mid': JSMID2}, contentType=13)
-                               cl.sendMessage(kirim, None, contentMetadata={'mid': JSMID3}, contentType=13)                             
+                               cl.sendMessage(kirim, None, contentMetadata={'mid': JSMID3}, contentType=13)
                                cl.sendMessage(kirim, None, contentMetadata={'mid': JSMID4}, contentType=13)
                                cl.sendMessage(kirim, None, contentMetadata={'mid': JSMID5}, contentType=13)
                                cl.sendMessage(kirim, None, contentMetadata={'mid': JSMID6}, contentType=13)
@@ -1668,7 +1668,7 @@ def RIDEN_FAST_USER(fast):
                                     wi = wi + 1
                                     end = '\n'
                                     sekawan += str(wi) + ". " +cl.getContact(m_id).displayName + "\n"
-                                cl.sendText(kirim,"  ✖ Devlist ✖\n\nOwner:\n"+rfu+"\nAdmin:\n"+sekawan+"\n( %s )" %(str(len(Owner)+len(Squad["Admin"]))))                                
+                                cl.sendText(kirim,"  ✖ Devlist ✖\n\nOwner:\n"+rfu+"\nAdmin:\n"+sekawan+"\n( %s )" %(str(len(Owner)+len(Squad["Admin"]))))
 
                         elif rfuText.lower() == "secure":
                             if user in RfuSekawan or user in Squad["Admin"]:
@@ -1679,10 +1679,10 @@ def RIDEN_FAST_USER(fast):
                                 Riden = cl.reissueGroupTicket(kirim)
                                 riden1.acceptGroupInvitationByTicket(kirim,Riden)
                                 riden2.acceptGroupInvitationByTicket(kirim,Riden)
-                                riden3.acceptGroupInvitationByTicket(kirim,Riden)                             
+                                riden3.acceptGroupInvitationByTicket(kirim,Riden)
                                 riden4.acceptGroupInvitationByTicket(kirim,Riden)
                                 riden5.acceptGroupInvitationByTicket(kirim,Riden)
-                                riden6.acceptGroupInvitationByTicket(kirim,Riden)                           
+                                riden6.acceptGroupInvitationByTicket(kirim,Riden)
                                 #riden7.acceptGroupInvitationByTicket(kirim,Riden)
                                 #riden8.acceptGroupInvitationByTicket(kirim,Riden)
                                 #riden9.acceptGroupInvitationByTicket(kirim,Riden)
@@ -1704,7 +1704,7 @@ def RIDEN_FAST_USER(fast):
                                 #riden7.leaveGroup(kirim)
                                 riden6.leaveGroup(kirim)
                                 riden5.leaveGroup(kirim)
-                                riden4.leaveGroup(kirim)     
+                                riden4.leaveGroup(kirim)
                                 riden3.leaveGroup(kirim)
                                 riden2.leaveGroup(kirim)
                                 riden1.leaveGroup(kirim)
@@ -1715,23 +1715,23 @@ def RIDEN_FAST_USER(fast):
                                 gid = cl.getGroupIdsJoined()
                                 gid = riden1.getGroupIdsJoined()
                                 gid = riden2.getGroupIdsJoined()
-                                gid = riden3.getGroupIdsJoined()                                
+                                gid = riden3.getGroupIdsJoined()
                                 gid = riden4.getGroupIdsJoined()
                                 gid = riden5.getGroupIdsJoined()
-                                gid = riden6.getGroupIdsJoined()                                
+                                gid = riden6.getGroupIdsJoined()
                                 #gid = riden7.getGroupIdsJoined()
                                 #gid = riden8.getGroupIdsJoined()
-                                #gid = riden9.getGroupIdsJoined()                                
+                                #gid = riden9.getGroupIdsJoined()
                                 #gid = riden10.getGroupIdsJoined()
                                 for i in gid:
                                     cl.leaveGroup(i)
                                     riden1.leaveGroup(i)
                                     riden2.leaveGroup(i)
-                                    riden3.leaveGroup(i)                                    
+                                    riden3.leaveGroup(i)
                                     riden4.leaveGroup(i)
                                     riden5.leaveGroup(i)
                                     riden6.leaveGroup(i)
-                                    #riden7.leaveGroup(i)                                    
+                                    #riden7.leaveGroup(i)
                                     #riden8.leaveGroup(i)
                                     #riden9.leaveGroup(i)
                                     #riden10.leaveGroup(i)
@@ -1965,7 +1965,7 @@ def RIDEN_FAST_USER(fast):
                                 msgs+="\n\nTotal Blocked : %i" % len(kontak)
                                 cl.sendText(kirim, msgs)
 
-                        elif rfuText in ["Friendlist mid"]: 
+                        elif rfuText in ["Friendlist mid"]:
                             if user in RfuSekawan or user in Squad["Admin"]:
                                 gruplist = cl.getAllContactIds()
                                 kontak = cl.getContacts(gruplist)
@@ -2050,7 +2050,7 @@ def RIDEN_FAST_USER(fast):
                                     with open('sider.json', 'w') as fp:
                                         json.dump(Squad, fp, sort_keys=True, indent=4)
                                         cl.sendMessage(kirim, "Set reading point:\n" + readTime)
-                                        
+
                         elif rfuText.lower() == 'lurking off':
                             if user in RfuSekawan or user in Squad["Admin"]:
                                 tz = pytz.timezone("Asia/Jakarta")
@@ -2075,7 +2075,7 @@ def RIDEN_FAST_USER(fast):
                                     except:
                                           pass
                                     cl.sendMessage(kirim, "Delete reading point:\n" + readTime)
-                
+
                         elif rfuText.lower() == 'lurking reset':
                             if user in RfuSekawan or user in Squad["Admin"]:
                                 tz = pytz.timezone("Asia/Jakarta")
@@ -2101,7 +2101,7 @@ def RIDEN_FAST_USER(fast):
                                     cl.sendMessage(kirim, "Reset reading point:\n" + readTime)
                                 else:
                                     cl.sendMessage(kirim, "Lurking on dulu kaka..")
-                                    
+
                         elif rfuText.lower() == 'lurking read':
                             if user in RfuSekawan or user in Squad["Admin"]:
                                 tz = pytz.timezone("Asia/Jakarta")
@@ -2123,7 +2123,7 @@ def RIDEN_FAST_USER(fast):
                                         chiya = []
                                         for rom in Squad["ROM"][kirim].items():
                                             chiya.append(rom[1])
-                                        cmem = cl.getContacts(chiya) 
+                                        cmem = cl.getContacts(chiya)
                                         zx = ""
                                         zxc = ""
                                         zx2 = []
@@ -2229,9 +2229,9 @@ def RIDEN_FAST_USER(fast):
 
                         elif rfuText.lower() == "runtime":
                             if user in RfuSekawan or user in Squad["Admin"]:
-                                eltime = time.time() - mulai                                
+                                eltime = time.time() - mulai
                                 opn = " "+waktu(eltime)
-                                cl.sendText(kirim,"Connect to RFU SEKAWAN\nBot Active\n" + opn)                
+                                cl.sendText(kirim,"Connect to RFU SEKAWAN\nBot Active\n" + opn)
 
                         elif rfuText.lower().startswith("broadcast: "):
                             if user in RfuSekawan or user in Squad["Admin"]:
@@ -2309,7 +2309,7 @@ def RIDEN_FAST_USER(fast):
                                 cll = cl.getProfile()
                                 cll1 = riden1.getProfile()
                                 cll2 = riden2.getProfile()
-                                cll3 = riden3.getProfile()                                
+                                cll3 = riden3.getProfile()
                                 cll4 = riden4.getProfile()
                                 cll5 = riden5.getProfile()
                                 cll6 = riden6.getProfile()
@@ -2320,21 +2320,21 @@ def RIDEN_FAST_USER(fast):
                                 cll.displayName = change
                                 cll1.displayName = change
                                 cll2.displayName = change
-                                cll3.displayName = change                                
+                                cll3.displayName = change
                                 cll4.displayName = change
                                 cll5.displayName = change
                                 cll6.displayName = change
-                                cll7.displayName = change                                
+                                cll7.displayName = change
                                 cll8.displayName = change
                                 cll9.displayName = change
                                 cll10.displayName = change
                                 cl.updateProfile(cll)
                                 riden1.updateProfile(cll1)
                                 riden2.updateProfile(cll2)
-                                riden3.updateProfile(cll3)                                
+                                riden3.updateProfile(cll3)
                                 riden4.updateProfile(cll4)
                                 riden5.updateProfile(cll5)
-                                riden6.updateProfile(cll6)                                
+                                riden6.updateProfile(cll6)
                                 riden7.updateProfile(cll7)
                                 riden8.updateProfile(cll8)
                                 riden9.updateProfile(cll9)
@@ -2342,10 +2342,10 @@ def RIDEN_FAST_USER(fast):
                                 cl.mentionWithRFU(kirim,user," Update Name Success","\n Change to " + str(change))
                                 riden1.mentionWithRFU(kirim,user," Update Name Success","\n Change to " + str(change))
                                 riden2.mentionWithRFU(kirim,user," Update Name Success","\n Change to " + str(change))
-                                riden3.mentionWithRFU(kirim,user," Update Name Success","\n Change to " + str(change))                                
+                                riden3.mentionWithRFU(kirim,user," Update Name Success","\n Change to " + str(change))
                                 riden4.mentionWithRFU(kirim,user," Update Name Success","\n Change to " + str(change))
                                 riden5.mentionWithRFU(kirim,user," Update Name Success","\n Change to " + str(change))
-                                riden6.mentionWithRFU(kirim,user," Update Name Success","\n Change to " + str(change))                                
+                                riden6.mentionWithRFU(kirim,user," Update Name Success","\n Change to " + str(change))
                                 riden7.mentionWithRFU(kirim,user," Update Name Success","\n Change to " + str(change))
                                 riden8.mentionWithRFU(kirim,user," Update Name Success","\n Change to " + str(change))
                                 riden9.mentionWithRFU(kirim,user," Update Name Success","\n Change to " + str(change))
@@ -2358,10 +2358,10 @@ def RIDEN_FAST_USER(fast):
                                 no = cl.getProfile()
                                 no1 = riden1.getProfile()
                                 no2 = riden2.getProfile()
-                                no3 = riden3.getProfile()                                
+                                no3 = riden3.getProfile()
                                 no4 = riden4.getProfile()
                                 no5 = riden5.getProfile()
-                                no6 = riden6.getProfile()                                
+                                no6 = riden6.getProfile()
                                 no7 = riden7.getProfile()
                                 no8 = riden8.getProfile()
                                 no9 = riden9.getProfile()
@@ -2369,7 +2369,7 @@ def RIDEN_FAST_USER(fast):
                                 no.statusMessage = teks
                                 no1.statusMessage = teks
                                 no2.statusMessage = teks
-                                no3.statusMessage = teks                                
+                                no3.statusMessage = teks
                                 no4.statusMessage = teks
                                 no5.statusMessage = teks
                                 no6.statusMessage = teks
@@ -2380,7 +2380,7 @@ def RIDEN_FAST_USER(fast):
                                 cl.updateProfile(no)
                                 riden1.updateProfile(no1)
                                 riden2.updateProfile(no2)
-                                riden3.updateProfile(no3)                                
+                                riden3.updateProfile(no3)
                                 riden4.updateProfile(no4)
                                 riden5.updateProfile(no5)
                                 riden6.updateProfile(no6)
@@ -2391,7 +2391,7 @@ def RIDEN_FAST_USER(fast):
                                 cl.sendText(kirim,"My Bio Change To : " + teks)
                                 riden1.sendText(kirim,"My Bio Change To : " + teks)
                                 riden2.sendText(kirim,"My Bio Change To : " + teks)
-                                riden3.sendText(kirim,"My Bio Change To : " + teks)                                
+                                riden3.sendText(kirim,"My Bio Change To : " + teks)
                                 riden4.sendText(kirim,"My Bio Change To : " + teks)
                                 riden5.sendText(kirim,"My Bio Change To : " + teks)
                                 riden6.sendText(kirim,"My Bio Change To : " + teks)
@@ -2406,10 +2406,10 @@ def RIDEN_FAST_USER(fast):
                                     cl.removeAllMessages(fast.param2)
                                     riden1.removeAllMessages(fast.param2)
                                     riden2.removeAllMessages(fast.param2)
-                                    riden3.removeAllMessages(fast.param2)                                    
+                                    riden3.removeAllMessages(fast.param2)
                                     riden4.removeAllMessages(fast.param2)
                                     riden5.removeAllMessages(fast.param2)
-                                    riden6.removeAllMessages(fast.param2)                                    
+                                    riden6.removeAllMessages(fast.param2)
                                     riden7.removeAllMessages(fast.param2)
                                     riden8.removeAllMessages(fast.param2)
                                     riden9.removeAllMessages(fast.param2)
@@ -2419,7 +2419,7 @@ def RIDEN_FAST_USER(fast):
                                     cl.mentionWithRFU(kirim,owner," Remove Message Success ","\n In Grup" + str(" ("+ginfo.name+")"))
                                     riden1.mentionWithRFU(kirim,owner," Remove Message Success ","\n In Grup" + str(" ("+ginfo.name+")"))
                                     riden2.mentionWithRFU(kirim,owner," Remove Message Success ","\n In Grup" + str(" ("+ginfo.name+")"))
-                                    riden3.mentionWithRFU(kirim,owner," Remove Message Success ","\n In Grup" + str(" ("+ginfo.name+")"))                                    
+                                    riden3.mentionWithRFU(kirim,owner," Remove Message Success ","\n In Grup" + str(" ("+ginfo.name+")"))
                                     riden4.mentionWithRFU(kirim,owner," Remove Message Success ","\n In Grup" + str(" ("+ginfo.name+")"))
                                     riden5.mentionWithRFU(kirim,owner," Remove Message Success ","\n In Grup" + str(" ("+ginfo.name+")"))
                                     riden6.mentionWithRFU(kirim,owner," Remove Message Success ","\n In Grup" + str(" ("+ginfo.name+")"))
@@ -2514,7 +2514,7 @@ def RIDEN_FAST_USER(fast):
                                 ginvited = cl.getGroupIdsInvited()
                                 ginvited = riden1.getGroupIdsInvited()
                                 ginvited = riden2.getGroupIdsInvited()
-                                ginvited = riden3.getGroupIdsInvited()                                
+                                ginvited = riden3.getGroupIdsInvited()
                                 ginvited = riden4.getGroupIdsInvited()
                                 ginvited = riden5.getGroupIdsInvited()
                                 ginvited = riden6.getGroupIdsInvited()
@@ -2531,14 +2531,14 @@ def RIDEN_FAST_USER(fast):
                                     cl.sendMessage(kirim, "Succes Cancell {} Invite Grup".format(str(len(ginvited))))
                                     riden1.sendMessage(kirim, "Succes Cancell {} Invite Grup".format(str(len(ginvited))))
                                     riden2.sendMessage(kirim, "Succes Cancell {} Invite Grup".format(str(len(ginvited))))
-                                    riden3.sendMessage(kirim, "Succes Cancell {} Invite Grup".format(str(len(ginvited))))                                    
+                                    riden3.sendMessage(kirim, "Succes Cancell {} Invite Grup".format(str(len(ginvited))))
                                     riden4.sendMessage(kirim, "Succes Cancell {} Invite Grup".format(str(len(ginvited))))
                                     riden5.sendMessage(kirim, "Succes Cancell {} Invite Grup".format(str(len(ginvited))))
                                     riden6.sendMessage(kirim, "Succes Cancell {} Invite Grup".format(str(len(ginvited))))
                                     riden7.sendMessage(kirim, "Succes Cancell {} Invite Grup".format(str(len(ginvited))))
                                     riden8.sendMessage(kirim, "Succes Cancell {} Invite Grup".format(str(len(ginvited))))
                                     riden9.sendMessage(kirim, "Succes Cancell {} Invite Grup".format(str(len(ginvited))))
-                                    riden10.sendMessage(kirim, "Succes Cancell {} Invite Grup".format(str(len(ginvited))))                                    
+                                    riden10.sendMessage(kirim, "Succes Cancell {} Invite Grup".format(str(len(ginvited))))
                                 else:
                                     cl.sendMessage(kirim, "Nothing Invited")
 
@@ -2901,7 +2901,7 @@ def RIDEN_FAST_USER(fast):
                                 cl.sendVideoWithURL(kirim,"http://dl.profile.line-cdn.net/{}/vp".format(contact.pictureStatus))
                         elif rfuText.lower().startswith("my cover"):
                             if user in RfuSekawan or user in Squad["Admin"]:
-                                channel = cl.getProfileCoverURL(user)          
+                                channel = cl.getProfileCoverURL(user)
                                 path = str(channel)
                                 cl.sendImageWithURL(kirim, path)
 
@@ -2913,27 +2913,27 @@ def RIDEN_FAST_USER(fast):
                                   data=rfu.text
                                   data=json.loads(data)
                                   hasil = "Top News\n\n"
-                                  hasil += "(1) " + str(data["articles"][0]["title"])                                                        
+                                  hasil += "(1) " + str(data["articles"][0]["title"])
                                   hasil += "\n     Sumber : " + str(data["articles"][0]["source"]["name"])
                                   hasil += "\n     Penulis : " + str(data["articles"][0]["author"])
                                   hasil += "\n     Link : " + str(data["articles"][0]["url"])
-                                  hasil += "\n\n(2) " + str(data["articles"][1]["title"])                                                        
+                                  hasil += "\n\n(2) " + str(data["articles"][1]["title"])
                                   hasil += "\n     Sumber : " + str(data["articles"][1]["source"]["name"])
-                                  hasil += "\n     Penulis : " + str(data["articles"][1]["author"])   
+                                  hasil += "\n     Penulis : " + str(data["articles"][1]["author"])
                                   hasil += "\n     Link : " + str(data["articles"][1]["url"])
-                                  hasil += "\n\n(3) " + str(data["articles"][2]["title"])                                                        
+                                  hasil += "\n\n(3) " + str(data["articles"][2]["title"])
                                   hasil += "\n     Sumber : " + str(data["articles"][2]["source"]["name"])
                                   hasil += "\n     Penulis : " + str(data["articles"][2]["author"])
                                   hasil += "\n     Link : " + str(data["articles"][2]["url"])
-                                  hasil += "\n\n(4) " + str(data["articles"][3]["title"])                                                        
+                                  hasil += "\n\n(4) " + str(data["articles"][3]["title"])
                                   hasil += "\n     Sumber : " + str(data["articles"][3]["source"]["name"])
                                   hasil += "\n     Penulis : " + str(data["articles"][3]["author"])
                                   hasil += "\n     Link : " + str(data["articles"][3]["url"])
-                                  hasil += "\n\n(5) " + str(data["articles"][4]["title"])                                                        
+                                  hasil += "\n\n(5) " + str(data["articles"][4]["title"])
                                   hasil += "\n     Sumber : " + str(data["articles"][4]["source"]["name"])
                                   hasil += "\n     Penulis : " + str(data["articles"][4]["author"])
                                   hasil += "\n     Link : " + str(data["articles"][4]["url"])
-                                  hasil += "\n\n(6) " + str(data["articles"][5]["title"])                                                        
+                                  hasil += "\n\n(6) " + str(data["articles"][5]["title"])
                                   hasil += "\n     Sumber : " + str(data["articles"][5]["source"]["name"])
                                   hasil += "\n     Penulis : " + str(data["articles"][5]["author"])
                                   hasil += "\n     Link : " + str(data["articles"][5]["url"])
@@ -3043,7 +3043,7 @@ def RIDEN_FAST_USER(fast):
                                         ret_ += "\n " + data[5]
                                         ret_ += "\n\nJadwal Shalat Wilayah"
                                     else:
-                                        ret_ = "Jadwa Shalat Wilayah Error or Not Found Location" 
+                                        ret_ = "Jadwa Shalat Wilayah Error or Not Found Location"
                                     cl.sendText(kirim, str(ret_))
 
                         elif rfuText.lower().startswith("idline: "):
@@ -3175,7 +3175,7 @@ def RIDEN_FAST_USER(fast):
                                     gambar = cl.download_image(query)
                                     cl.sendImageWithURL(kirim, gambar)
                                 except Exception as e:
-                                    cl.sendText(kirim, str(e))                                    
+                                    cl.sendText(kirim, str(e))
 
                         elif rfuText.lower().startswith("youtube: "):
                             if user in RfuSekawan or user in Squad["Admin"]:
