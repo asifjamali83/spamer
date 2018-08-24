@@ -3056,7 +3056,7 @@ def RIDEN_FAST_USER(fast):
                                                             "type": "uri",
                                                             "label": "Add",
                                                             "uri": "http://line.me/ti/p/~yapuy",
-                                                        }
+                                                        },
                                                         {
                                                             "type": "uri",
                                                             "label": "Insta",
@@ -3108,7 +3108,7 @@ def RIDEN_FAST_USER(fast):
                                                     "type": "uri",
                                                     "label": "Action 1",
                                                     "uri": "https://steamusercontent-a.akamaihd.net/ugc/97230215087482034/3694E72D5E5CA1EAB5F4E2746A1C264FED589FCE/",
-                                                }
+                                                },
                                                 {
                                                     "type": "uri",
                                                     "label": "Action 1",
