@@ -10,26 +10,26 @@ import time, random, asyncio, timeit, sys, json, codecs, threading, glob, re, st
 
 print ("\n\n ---  WELCOME TO RFU SEKAWAN  ---\n")
 
-#cl = RIDEN()
-cl = RIDEN(authTokenRFU=".WoXuSNFRxJJ4y5tpLNBYaG./ipel7vouvQeFYnET7SY9OsBq9t1MCAoY08keSX+0co=")
+cl = RIDEN()
+#cl = RIDEN(authTokenRFU=".WoXuSNFRxJJ4y5tpLNBYaG./ipel7vouvQeFYnET7SY9OsBq9t1MCAoY08keSX+0co=")
 cl.log("YOUR TOKEN : {}".format(str(cl.authToken)))
 channel = RIDENChannel(cl,cl.server.CHANNEL_ID['LINE_TIMELINE'])
 cl.log("CHANNEL TOKEN : " + str(channel.getChannelResult()))
 
-#riden1 = RIDEN()
-riden1 = RIDEN(authTokenRFU=".chzPZCJKqTnOBJBuhahHfG.ir5ZG9uFY+ezn/EHccQUCS62iOIu/myA5/K/X30Ti1U=")
+riden1 = RIDEN()
+#riden1 = RIDEN(authTokenRFU=".chzPZCJKqTnOBJBuhahHfG.ir5ZG9uFY+ezn/EHccQUCS62iOIu/myA5/K/X30Ti1U=")
 riden1.log("YOUR TOKEN : {}".format(str(riden1.authToken)))
 channel = RIDENChannel(riden1,riden1.server.CHANNEL_ID['LINE_TIMELINE'])
 riden1.log("CHANNEL TOKEN : " + str(channel.getChannelResult()))
 
-#riden2 = RIDEN()
-riden2 = RIDEN(authTokenRFU=".rTGTuZMwsqegoQc3R1OgTG.69O2uj2UDRCgjjWj3UA2eH+H/kUdnZVoBwAVSgmnJ7Q=")
+riden2 = RIDEN()
+#riden2 = RIDEN(authTokenRFU=".rTGTuZMwsqegoQc3R1OgTG.69O2uj2UDRCgjjWj3UA2eH+H/kUdnZVoBwAVSgmnJ7Q=")
 riden2.log("YOUR TOKEN : {}".format(str(riden2.authToken)))
 channel = RIDENChannel(riden2,riden2.server.CHANNEL_ID['LINE_TIMELINE'])
 riden2.log("CHANNEL TOKEN : " + str(channel.getChannelResult()))
 
-#riden3 = RIDEN()
-riden3 = RIDEN(authTokenRFU=".Kb1XkNFun3+dtXhQ6wLJrW.JWI+kr7gH2A/EfDCxc0/PFZjHHR/7kmRWsaikYWXJhg=")
+riden3 = RIDEN()
+#riden3 = RIDEN(authTokenRFU=".Kb1XkNFun3+dtXhQ6wLJrW.JWI+kr7gH2A/EfDCxc0/PFZjHHR/7kmRWsaikYWXJhg=")
 riden3.log("YOUR TOKEN : {}".format(str(riden3.authToken)))
 channel = RIDENChannel(riden3,riden3.server.CHANNEL_ID['LINE_TIMELINE'])
 riden3.log("CHANNEL TOKEN : " + str(channel.getChannelResult()))
@@ -46,7 +46,7 @@ JSMID1 = riden1.profile.mid
 JSMID2 = riden2.profile.mid
 JSMID3 = riden3.profile.mid
 RfuBot=[mid,JSMID1,JSMID2,JSMID3]
-Owner=["uc721ad1f11fb7e128453ba5a27424998","u2fd9d66d7006f6dac03dc94950fa83c8"]
+Owner=["uc0ec54b277eb5e38f86394cf9676f202"]
 RfuSekawan = RfuBot + Rfu + Owner
 
 contact = cl.getProfile()
