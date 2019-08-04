@@ -1286,10 +1286,10 @@ def RIDEN_FAST_USER(fast):
                                 riden3.createGroup("RIDEN SPAM GROUP",[target])
                                 riden3.createGroup("RIDEN SPAM GROUP",[target])
                                 cl.sendText(kirim,"Spam Invite ke " + korban + "\nSUCCESS..")
-                                Squad['SpamInvite'] = False
+                                Squad['SpamInvite'] = True
                             except:             
                                  cl.sendText(kirim, 'Contact error')
-                                 Squad['SpamInvite'] = False
+                                 Squad['SpamInvite'] = True
                                  break
 
 
@@ -2514,7 +2514,7 @@ def RIDEN_FAST_USER(fast):
                                     Squad['Unban'] = False
                                     Squad['KillOn'] = False
                                     Squad['KickOn'] = False
-                                    Squad['SpamInvite'] = False
+                                    Squad['SpamInvite'] = True
                                     cl.sendText(kirim,"Refresh Success")
                                 except Exception as e:
                                     cl.sendText(kirim, str(error))
