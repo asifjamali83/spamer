@@ -11,25 +11,25 @@ import time, random, asyncio, timeit, sys, json, codecs, threading, glob, re, st
 print ("\n\n ---  WELCOME TO RFU SEKAWAN  ---\n")
 
 cl = RIDEN()
-#cl = RIDEN(authTokenRFU="YOUR TOKEN")
+#cl = RIDEN(authTokenRFU="EHXNx8sjRnj92Nw7b3R2.WoXuSNFRxJJ4y5tpLNBYaG./ipel7vouvQeFYnET7SY9OsBq9t1MCAoY08keSX+0co=")
 cl.log("YOUR TOKEN : {}".format(str(cl.authToken)))
 channel = RIDENChannel(cl,cl.server.CHANNEL_ID['LINE_TIMELINE'])
 cl.log("CHANNEL TOKEN : " + str(channel.getChannelResult()))
 
 riden1 = RIDEN()
-#riden1 = RIDEN(authTokenRFU="YOUR TOKEN")
+#riden1 = RIDEN(authTokenRFU="EHrC0dypNxkw1JJzAhu6.chzPZCJKqTnOBJBuhahHfG.ir5ZG9uFY+ezn/EHccQUCS62iOIu/myA5/K/X30Ti1U=")
 riden1.log("YOUR TOKEN : {}".format(str(riden1.authToken)))
 channel = RIDENChannel(riden1,riden1.server.CHANNEL_ID['LINE_TIMELINE'])
 riden1.log("CHANNEL TOKEN : " + str(channel.getChannelResult()))
 
 riden2 = RIDEN()
-#riden2 = RIDEN(authTokenRFU="YOUR TOKEN")
+#riden2 = RIDEN(authTokenRFU="EHe4VJmsBMNGVRtv6DH6.rTGTuZMwsqegoQc3R1OgTG.69O2uj2UDRCgjjWj3UA2eH+H/kUdnZVoBwAVSgmnJ7Q=")
 riden2.log("YOUR TOKEN : {}".format(str(riden2.authToken)))
 channel = RIDENChannel(riden2,riden2.server.CHANNEL_ID['LINE_TIMELINE'])
 riden2.log("CHANNEL TOKEN : " + str(channel.getChannelResult()))
 
 riden3 = RIDEN()
-#riden3 = RIDEN(authTokenRFU="YOUR TOKEN")
+#riden3 = RIDEN(authTokenRFU="EH9GhzhQB25wFlNLQVk7.Kb1XkNFun3+dtXhQ6wLJrW.JWI+kr7gH2A/EfDCxc0/PFZjHHR/7kmRWsaikYWXJhg=")
 riden3.log("YOUR TOKEN : {}".format(str(riden3.authToken)))
 channel = RIDENChannel(riden3,riden3.server.CHANNEL_ID['LINE_TIMELINE'])
 riden3.log("CHANNEL TOKEN : " + str(channel.getChannelResult()))
@@ -99,8 +99,8 @@ Squad = {
     "Unban":False,
     "AddMention":True,
     "Admin": {
-        "uc721ad1f11fb7e128453ba5a27424998":True,  #TARO MID ADMIN NYA DISINI
-        "u2fd9d66d7006f6dac03dc94950fa83c8":True
+        "uc0ec54b277eb5e38f86394cf9676f202":True,  #TARO MID ADMIN NYA DISINI
+        "uc0ec54b277eb5e38f86394cf9676f202":True
     },
 }
 
